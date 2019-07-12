@@ -11,3 +11,4 @@ if(hourNow > 18){
     greeting = "早安";
 }
 console.log(greeting);
+document.write("<h3>" + greeting + "</h3>");
