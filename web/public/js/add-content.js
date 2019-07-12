@@ -1,4 +1,7 @@
-var today = new Date();
+/*
+This is javascript;
+ */
+var today = new Date(); //create a new date object
 var hourNow = today.getHours();
 console.log(hourNow);
 
