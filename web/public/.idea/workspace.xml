@@ -15,7 +15,23 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/numeric-variable.js">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/numeric-variable.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="38" />
+              <folding>
+                <element signature="e#54#59#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -70,11 +86,6 @@
             <path>
               <item name="public" type="b2602c69:ProjectViewProjectNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="public" type="b2602c69:ProjectViewProjectNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -119,15 +130,15 @@
       <option name="presentableId" value="Default" />
       <updated>1562897752522</updated>
       <workItem from="1562900532479" duration="110000" />
-      <workItem from="1562900701486" duration="5387000" />
+      <workItem from="1562900701486" duration="7047000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5497000" />
+    <option name="totallyTimeSpent" value="7157000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -199,16 +210,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/numeric-variable.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="39" />
-          <folding>
-            <element signature="e#54#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/add-content.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -219,8 +220,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/numeric-variable.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="38" />
+          <folding>
+            <element signature="e#54#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/numeric-variable.js">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
