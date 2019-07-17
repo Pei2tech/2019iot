@@ -17,15 +17,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/section2/string-object.html">
+        <entry file="file://$PROJECT_DIR$/section2/number-object.html">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/section2/js/string-object.js">
+        <entry file="file://$PROJECT_DIR$/section2/js/number-object.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            <state relative-caret-position="120">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -81,6 +81,7 @@
         <option value="$PROJECT_DIR$/section2/js/adding-and-removing-properties.js" />
         <option value="$PROJECT_DIR$/section2/js/window-object.js" />
         <option value="$PROJECT_DIR$/section2/js/string-object.js" />
+        <option value="$PROJECT_DIR$/section2/js/number-object.js" />
       </list>
     </option>
   </component>
@@ -162,12 +163,12 @@
       <workItem from="1562912577842" duration="5876000" />
       <workItem from="1563152879657" duration="9727000" />
       <workItem from="1563238762088" duration="121000" />
-      <workItem from="1563325541272" duration="6343000" />
+      <workItem from="1563325541272" duration="7338000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30726000" />
+    <option name="totallyTimeSpent" value="31721000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -444,13 +445,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/section2/js/string-object.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/section2/string-object.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/section2/js/string-object.js">
+    <entry file="file://$PROJECT_DIR$/section2/number-object.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/section2/js/number-object.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        <state relative-caret-position="120">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
