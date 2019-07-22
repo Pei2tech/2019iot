@@ -16,20 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/section3/get-element-by-id.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/section3/get-elements-by-class-name.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="57" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="57" />
+            <state relative-caret-position="336">
+              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/section3/js/get-element-by-id.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/section3/js/get-elements-by-class-name.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+            <state relative-caret-position="72">
+              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -48,6 +48,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>message</find>
+      <find>.cool</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -88,10 +89,11 @@
         <option value="$PROJECT_DIR$/section2/js/number-object.js" />
         <option value="$PROJECT_DIR$/section2/js/math-object.js" />
         <option value="$PROJECT_DIR$/section3/js/get-element-by-id.js" />
+        <option value="$PROJECT_DIR$/section3/js/get-elements-by-class-name.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="147" />
     <option name="y" value="40" />
     <option name="width" value="1400" />
@@ -114,6 +116,12 @@
               <item name="public" type="b2602c69:ProjectViewProjectNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="section3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="public" type="b2602c69:ProjectViewProjectNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="section3" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="public" type="b2602c69:ProjectViewProjectNode" />
@@ -170,12 +178,12 @@
       <workItem from="1563152879657" duration="9727000" />
       <workItem from="1563238762088" duration="121000" />
       <workItem from="1563325541272" duration="8211000" />
-      <workItem from="1563757970311" duration="2084000" />
+      <workItem from="1563757970311" duration="3393000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34678000" />
+    <option name="totallyTimeSpent" value="35987000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -493,6 +501,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="12" column="57" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/section3/get-elements-by-class-name.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/section3/css/c05.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="78" column="38" lean-forward="true" selection-start-line="74" selection-start-column="4" selection-end-line="78" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/section3/js/get-elements-by-class-name.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
         </state>
       </provider>
     </entry>
