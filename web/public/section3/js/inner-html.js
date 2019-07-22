@@ -7,6 +7,6 @@ firstItem.innerHTML = '<a href=\"http://www.w3school.com.cn\">' + itemContent + 
 var newEl = document.createElement('li');
 var newText = document.createTextNode("妹妹");
 newEl.appendChild(newText);
-newEl.id = "five";
+newEl.setAttribute('id', "five");
 var ulPosition = document.getElementsByTagName("ul")[0];
 ulPosition.appendChild(newEl);
