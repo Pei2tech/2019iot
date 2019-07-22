@@ -1,4 +1,4 @@
-var el = document.querySelector('li.hot');
+var el = document.querySelector('.hot');
 el.className = 'cool';
 
 //var els = document.querySelectorAll('li.hot');
