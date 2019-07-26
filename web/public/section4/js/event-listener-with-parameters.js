@@ -11,6 +11,6 @@ function checkUsername(minLength){
 elUsername.addEventListener(
     'blur',
     function(event){
-       checkUsername(6)
+       checkUsername(5)
     },
     false);
