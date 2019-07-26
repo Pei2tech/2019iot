@@ -9,6 +9,6 @@ function checkUsername(){
     }
 }
 //console.log(window.checkUsername);
-//Event Handler
+//DOM Event Handler
 userNameElement.onblur = checkUsername;
 
