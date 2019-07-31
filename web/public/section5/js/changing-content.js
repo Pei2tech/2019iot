@@ -5,7 +5,7 @@ $(document).ready(function(event){
 */
 
 $(function(){
-     var $li_pine = $('li:contains("pine")');
-     $li_pine.text("almonds");
+    var $li_pine = $('li:contains("pine")');
+    $li_pine.text("almonds");
 });
 
