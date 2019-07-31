@@ -4,6 +4,6 @@ $(function () {
         var date = new Date();
         date.setTime(event.timeStamp);
         var clicked = date.toDateString();
-        $(this).append('<span class="date">' + clicked +'</span>');
+        $(this).append('<span class="date">' + event.timeStamp + '' +event.type +'</span>');
     });
 });
