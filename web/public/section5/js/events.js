@@ -2,12 +2,17 @@ $(function () {
     var ids = "";
     var $listItems = $("li");
     $listItems.on('mouseover click',function(event){
-        ids = this.id;
-        $listItems.children('span').remove();
-        $(this).append("<span class='priority'>" + ids + '</span>');
+
+            ids = this.id;
+            $listItems.children('span').remove();
+            $(this).append("<span class='priority'>" + ids + '</span>');
+
+
+
     });
 
-    $listItems.on('mouseout', function(){
+    $listItems.on('mouseout', function(event){
         $(this).children('span').remove();
+
     });
 });
