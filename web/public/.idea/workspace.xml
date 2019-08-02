@@ -17,19 +17,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/section5/animate.html">
+        <entry file="file://$PROJECT_DIR$/section5/form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+            <state relative-caret-position="360">
+              <caret line="18" column="84" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="84" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/section5/js/animate.js">
+        <entry file="file://$PROJECT_DIR$/section5/js/form.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="384">
+              <caret line="16" column="53" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -57,8 +57,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/section2/js/object-constructor.js" />
-        <option value="$PROJECT_DIR$/section2/object-constructor.html" />
         <option value="$PROJECT_DIR$/section2/js/multiple-objects.js" />
         <option value="$PROJECT_DIR$/section2/js/adding-and-removing-properties.js" />
         <option value="$PROJECT_DIR$/section2/js/window-object.js" />
@@ -108,6 +106,8 @@
         <option value="$PROJECT_DIR$/section5/js/effects.js" />
         <option value="$PROJECT_DIR$/section5/animate.html" />
         <option value="$PROJECT_DIR$/section5/js/animate.js" />
+        <option value="$PROJECT_DIR$/section5/form.html" />
+        <option value="$PROJECT_DIR$/section5/js/form.js" />
       </list>
     </option>
   </component>
@@ -196,19 +196,19 @@
       <workItem from="1564103338944" duration="8796000" />
       <workItem from="1564363953574" duration="7998000" />
       <workItem from="1564534919309" duration="10143000" />
-      <workItem from="1564708012478" duration="3261000" />
+      <workItem from="1564708012478" duration="5287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80442000" />
+    <option name="totallyTimeSpent" value="82468000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.50138503" side_tool="true" weight="0.19056848" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4972299" visible="true" weight="0.31847546" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4972299" weight="0.31847546" />
       <window_info id="Structure" order="2" sideWeight="0.50277007" side_tool="true" weight="0.27067184" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.4196676" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.32963988" />
@@ -231,7 +231,7 @@
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" sideWeight="0.50138503" side_tool="true" weight="0.19056848" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4972299" visible="true" weight="0.3133075" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4972299" visible="true" weight="0.31847546" />
       <window_info id="Structure" order="2" sideWeight="0.50277007" side_tool="true" weight="0.27067184" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.4196676" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.32963988" />
@@ -257,20 +257,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/section3/js/get-elements-by-class-name.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/section3/get-elements-by-class-name.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/section3/js/node-list.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -601,6 +587,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/section5/js/animate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/section5/animate.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -608,10 +601,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/section5/js/animate.js">
+    <entry file="file://$PROJECT_DIR$/section5/form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="29" />
+        <state relative-caret-position="360">
+          <caret line="18" column="84" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/section5/js/form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="53" />
         </state>
       </provider>
     </entry>
