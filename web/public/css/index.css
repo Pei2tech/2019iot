@@ -49,8 +49,34 @@ table {
 }
 
 /*--------------reset end-------------*/
+.clearfix::after {
+  content: " ";
+  clear: both;
+  display: block;
+}
 
 html{
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: 300;
+}
+
+nav{
+    background: #938f6f;
+
+}
+
+nav>h1{
+    float:left;
+}
+
+nav>ul{
+    float:right;
+}
+
+main{
+    background: #6e8691;
+}
+
+footer{
+    background: #6e7b93;
 }
