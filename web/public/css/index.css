@@ -62,7 +62,7 @@ html{
 
 nav{
     background: #938f6f;
-
+    height: 60px;
 }
 
 nav>h1{
@@ -71,6 +71,10 @@ nav>h1{
 
 nav>ul{
     float:right;
+}
+
+nav>ul>li{
+    float:left;
 }
 
 main{
