@@ -116,6 +116,34 @@ main{
     margin-top: 30px;
 }
 
+h1+p {
+    width: 500px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 200;
+    letter-spacing: 0.02em;
+}
+
+#sectionContainer {
+    display: flex;
+    justify-content: space-between;
+	margin-top: 30px;
+}
+
+#sectionContainer section {
+    flex-grow: 1;
+    background: #baf5f5;
+    height: 150px;
+}
+
+#sectionContainer section:first-child{
+	margin-right:20px;
+}
+
+#sectionContainer section:last-child{
+	margin-left:20px;
+}
 footer{
     background: #6e7b93;
 }
