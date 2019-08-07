@@ -172,4 +172,7 @@ footer{
 .alertMessage form{
 	position: relative;
 	z-index:2;
+	background: white;
+    width: 320px;
+    padding: 20px;
 }
