@@ -62,6 +62,7 @@ html{
 
 nav{
     height: 60px;
+	border-bottom:solid 1px #aaa;
 }
 
 nav>h1{
@@ -81,6 +82,7 @@ nav>ul{
 
 nav>ul>li{
     float:left;
+	letter-spacing: 0.5px
 }
 nav a{
 	margin-right:10px;
@@ -88,8 +90,14 @@ nav a{
     text-decoration: none;
 }
 
+nav a.signIn{
+	padding: 5px 10px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+}
+
 main{
-    background: #6e8691;
+    /*background: #6e8691;*/
 }
 
 footer{
