@@ -1,12 +1,13 @@
-function newDomListener(event){
-    $(this).remove();
-}
+
 
 $(function(){
+    let $alertMessage = $(".alertMessage");
+    $alertMessage.hide();
     $('.signIn').on('click',function(event){
-        let $newDom = $("<div class='alertMessage'></div>");
-        $newDom.on("click", newDomListener);
-        $("body").append($newDom);
+         $alertMessage.show();
         event.preventDefault();
+        $('.cancel').on("click",function(event){
+            $alertMessage.hide();
+        })
     });
 });
