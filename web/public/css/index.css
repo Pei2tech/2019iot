@@ -92,8 +92,13 @@ nav a{
 
 nav a.signIn{
 	padding: 5px 10px;
-    border: 1px solid #aaa;
+    border: 1px solid #F17C67;
     border-radius: 8px;
+}
+
+nav a.signIn:hover{
+	background:#F17c67;
+	color:#FFF;
 }
 
 main{
