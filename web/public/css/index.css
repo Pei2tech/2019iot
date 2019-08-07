@@ -94,6 +94,7 @@ nav a.signIn{
 	padding: 5px 10px;
     border: 1px solid #F17C67;
     border-radius: 8px;
+	color: #F17C67;
 }
 
 nav a.signIn:hover{
@@ -103,6 +104,16 @@ nav a.signIn:hover{
 
 main{
     /*background: #6e8691;*/
+}
+#innerMain {
+    width: 780px;
+    margin: 0 auto 0 auto;
+}
+
+#innerMain h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 30px;
 }
 
 footer{
