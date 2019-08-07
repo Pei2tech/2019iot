@@ -135,8 +135,8 @@ h1+p {
 
 #sectionContainer section {
     flex-grow: 1;
-    background: #baf5f5;
     height: 150px;
+	border: solid 1px #bbb;
 }
 
 #sectionContainer section:first-child{
@@ -145,6 +145,28 @@ h1+p {
 
 #sectionContainer section:last-child{
 	margin-left:20px;
+}
+
+section h2 {
+    height: 30px;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 5px;
+    background: #ddd;
+    line-height: 30px;
+    border-bottom: solid 1px #bbb;
+}
+
+section li {
+    margin: 10px;
+    text-align: center;
+
+}
+
+section li:first-child {
+    margin: 20px;
+    text-align: center;
+	font-size: 2em;
 }
 footer{
     background: #6e7b93;
