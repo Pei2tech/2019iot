@@ -223,3 +223,20 @@ footer{
 
 
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    footer {
+        background: #93435e;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    footer {
+        background: #938245;
+    }
+}
+@media (max-width:575px){
+     footer {
+        background: #407d93;
+    }
+}
