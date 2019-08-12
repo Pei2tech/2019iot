@@ -22,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="232" column="19" lean-forward="true" selection-start-line="232" selection-start-column="19" selection-end-line="232" selection-end-column="19" />
+            <state relative-caret-position="312">
+              <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -56,7 +56,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="147" />
     <option name="y" value="40" />
     <option name="width" value="1400" />
@@ -139,12 +139,12 @@
       <workItem from="1564716351835" duration="877000" />
       <workItem from="1564967516084" duration="8442000" />
       <workItem from="1565140171955" duration="20355000" />
-      <workItem from="1565571959559" duration="4754000" />
+      <workItem from="1565571959559" duration="5704000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34428000" />
+    <option name="totallyTimeSpent" value="35378000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -219,8 +219,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="232" column="19" lean-forward="true" selection-start-line="232" selection-start-column="19" selection-end-line="232" selection-end-column="19" />
+        <state relative-caret-position="312">
+          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
         </state>
       </provider>
     </entry>
