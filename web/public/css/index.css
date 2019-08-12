@@ -254,6 +254,20 @@ footer{
 }
 
 @media  (max-width: 767px) {
+    nav>h1{
+        float:none;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    nav>ul {
+    float: none;
+    }
+
+    nav>ul>li {
+    float: none;
+    letter-spacing: 0.5px;
+    }
     #innerMain {
          width: 95%;
         margin: 20px auto;
@@ -280,7 +294,7 @@ footer{
 
     #sectionContainer section:last-child{
 	margin-left:0px;
-}
+    }
 
     footer {
         background: #938245;
