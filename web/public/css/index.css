@@ -254,6 +254,9 @@ footer{
 }
 
 @media  (max-width: 767px) {
+    nav {
+        height: inherit;
+    }
     nav>h1{
         float:none;
         padding-left: 0px;
@@ -262,7 +265,7 @@ footer{
 
     nav>ul {
         float: none;
-        
+
     }
 
     nav>ul>li {
