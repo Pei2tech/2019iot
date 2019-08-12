@@ -225,6 +225,20 @@ footer{
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    #sectionContainer {
+       flex-wrap: wrap;
+    }
+
+    #sectionContainer section:first-child {
+        width:100%;
+    }
+    #sectionContainer section:nth-child(2){
+        width:40%;
+    }
+    #sectionContainer section:last-child{
+        width:40%;
+    }
+
     footer {
         background: #93435e;
     }
