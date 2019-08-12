@@ -177,6 +177,11 @@ section p {
     margin: 20px 20px;
     border-radius: 10px;
 }
+
+section p:hover {
+    background: #F17C67;
+    color: white;
+}
 footer{
     background: #6e7b93;
 }
