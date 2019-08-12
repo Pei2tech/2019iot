@@ -135,7 +135,6 @@ h1+p {
 
 #sectionContainer section {
     flex-grow: 1;
-    height: 150px;
 	border: solid 1px #bbb;
 }
 
