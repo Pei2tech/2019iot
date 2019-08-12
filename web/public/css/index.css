@@ -104,6 +104,7 @@ nav a.signIn:hover{
 
 main{
     /*background: #6e8691;*/
+    margin-bottom: 50px;
 }
 #innerMain {
     width: 780px;
@@ -184,6 +185,7 @@ section p:hover {
 }
 footer{
     background: #6e7b93;
+    height: 150px;
 }
 
 .alertMessage{
