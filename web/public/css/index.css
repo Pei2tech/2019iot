@@ -75,6 +75,9 @@ nav>h1{
     font-weight: 700;
     color: #555;
 }
+nav>img{
+    display: none;
+}
 
 nav>ul{
     float:right;
@@ -264,6 +267,10 @@ footer{
         text-align: center;
     }
 
+    nav>img{
+    display: inline-block;
+    }
+
     nav>ul {
         float: none;
         width: 95%;
@@ -288,15 +295,21 @@ footer{
      padding: inherit;
      border: 0px;
      border-radius: inherit;
+     /*color:white;*/
+    }
+    nav a.signIn:visited{
+         color: white;
+    }
+
+
+    nav a.signIn:hover{
+        color: white;
 
     }
     nav a.signIn:active{
         color:white;
     }
 
-    nav a.signIn:hover{
-        color:white;
-    }
     #innerMain {
          width: 95%;
         margin: 20px auto;
