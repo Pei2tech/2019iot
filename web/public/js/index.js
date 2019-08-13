@@ -17,10 +17,13 @@ $(function(){
     var menuState = false;
     $("#menu").on("click",function(event){
         menuState = !menuState;
+
         if (menuState) {
             console.log("menu open");
+            $(this).attr("src","images/close.png");
         }else{
             console.log("menu close");
+            $(this).attr("src","images/menu.png");
         }
     });
 });
