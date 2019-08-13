@@ -10,4 +10,17 @@ $(function(){
             $alertMessage.slideUp(400);
         })
     });
+
+});
+
+$(function(){
+    var menuState = false;
+    $("#menu").on("click",function(event){
+        menuState = !menuState;
+        if (menuState) {
+            console.log("menu open");
+        }else{
+            console.log("menu close");
+        }
+    });
 });
