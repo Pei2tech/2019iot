@@ -265,12 +265,19 @@ footer{
 
     nav>ul {
         float: none;
+        width: 95%;
+        margin: 0px auto;
 
     }
 
     nav>ul>li {
-    float: none;
-    letter-spacing: 0.5px;
+        float: none;
+        letter-spacing: 0.5px;
+        height: 2em;
+        height: 3em;
+        text-align: center;
+        border: solid 1px #bbb;
+        line-height: 3em;
     }
     #innerMain {
          width: 95%;
