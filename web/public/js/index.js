@@ -36,3 +36,17 @@ $(function(){
         }
     });
 });
+
+$(function () {
+   var firebaseConfig = {
+    apiKey: "AIzaSyCBa3cc1A9mlWzDnG_0e9ltIcZhOWiA-tk",
+    authDomain: "arduinofirebase-6d104.firebaseapp.com",
+    databaseURL: "https://arduinofirebase-6d104.firebaseio.com",
+    projectId: "arduinofirebase-6d104",
+    storageBucket: "arduinofirebase-6d104.appspot.com",
+    messagingSenderId: "775007261514",
+    appId: "1:775007261514:web:1d7170ca43c85472"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+});

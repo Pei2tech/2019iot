@@ -13,8 +13,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="22" column="51" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="51" />
+            <state relative-caret-position="2160">
+              <caret line="90" selection-start-line="90" selection-end-line="90" />
             </state>
           </provider>
         </entry>
@@ -31,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+            <state relative-caret-position="378">
+              <caret line="47" column="37" selection-start-line="40" selection-start-column="8" selection-end-line="47" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -59,9 +59,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/css/index.css" />
         <option value="$PROJECT_DIR$/public/js/index.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
       </list>
     </option>
   </component>
@@ -145,12 +145,12 @@
       <workItem from="1565140171955" duration="20355000" />
       <workItem from="1565571959559" duration="8427000" />
       <workItem from="1565658659219" duration="9548000" />
-      <workItem from="1565917784905" duration="3878000" />
+      <workItem from="1565917784905" duration="5471000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51527000" />
+    <option name="totallyTimeSpent" value="53120000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -211,8 +211,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="51" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="51" />
+        <state relative-caret-position="2160">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
         </state>
       </provider>
     </entry>
@@ -225,8 +225,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+        <state relative-caret-position="378">
+          <caret line="47" column="37" selection-start-line="40" selection-start-column="8" selection-end-line="47" selection-end-column="37" />
         </state>
       </provider>
     </entry>
