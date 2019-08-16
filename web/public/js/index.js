@@ -1,5 +1,5 @@
 
-
+//sign in
 $(function(){
     let $alertMessage = $(".alertMessage");
     $alertMessage.hide();
@@ -13,6 +13,7 @@ $(function(){
 
 });
 
+//menu
 $(function(){
     var menuState = false;
     $("#menu").on("click touchstart",function(event){
@@ -37,6 +38,7 @@ $(function(){
     });
 });
 
+//firebase
 $(function () {
    var firebaseConfig = {
     apiKey: "AIzaSyCBa3cc1A9mlWzDnG_0e9ltIcZhOWiA-tk",

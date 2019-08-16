@@ -10,11 +10,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2160">
-              <caret line="90" selection-start-line="90" selection-end-line="90" />
+            <state relative-caret-position="264">
+              <caret line="80" column="45" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -28,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="47" column="37" selection-start-line="40" selection-start-column="8" selection-end-line="47" selection-end-column="37" />
+            <state relative-caret-position="72">
+              <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -145,12 +145,12 @@
       <workItem from="1565140171955" duration="20355000" />
       <workItem from="1565571959559" duration="8427000" />
       <workItem from="1565658659219" duration="9548000" />
-      <workItem from="1565917784905" duration="5471000" />
+      <workItem from="1565917784905" duration="6721000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53120000" />
+    <option name="totallyTimeSpent" value="54370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -209,13 +209,6 @@
     <entry file="file://$PROJECT_DIR$/public/favicon.ico">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -225,8 +218,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="47" column="37" selection-start-line="40" selection-start-column="8" selection-end-line="47" selection-end-column="37" />
+        <state relative-caret-position="72">
+          <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="80" column="45" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
         </state>
       </provider>
     </entry>
