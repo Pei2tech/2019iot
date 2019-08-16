@@ -257,6 +257,7 @@ footer{
 }
 
 @media  (max-width: 767px) {
+
     nav {
         height: inherit;
         border-bottom: 0px;

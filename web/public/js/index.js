@@ -17,8 +17,8 @@ $(function(){
     var menuState = false;
     $("#menu").on("click touchstart",function(event){
         menuState = !menuState;
-
-        if (menuState) {
+        let smallWindow = $(window).width() <= 767;
+        if (menuState && smallWindow) {
             console.log("menu open");
             $(this).attr("src","images/close.png");
             $("nav>ul").css("display","block");
@@ -28,5 +28,11 @@ $(function(){
             $("nav>ul").css("display","none");
         }
         event.preventDefault();
+    });
+    $(window).resize(function(event){
+        //console.log(window.innerWidth)
+        if(window.innerWidth > 767){
+            $("nav>ul").show();
+        }
     });
 });
