@@ -8,10 +8,10 @@ void loop() {
   // put your main code here, to run repeatedly:
   if(Serial.available()){
     char switchChar = Serial.read();
-    if(switchChar == '1'){
-      digitalWrite(13,HIGH);
-    }else{
+    if(switchChar == '0'){
       digitalWrite(13,LOW);
+    }else{
+      digitalWrite(13,HIGH);
     }
   }
 }
