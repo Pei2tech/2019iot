@@ -11,6 +11,14 @@ class Led{
      byte getPinNum(){
         return _pinNum;
      }
+
+     void on(){
+      digitalWrite(_pinNum,HIGH);
+     }
+
+     void off(){
+      digitalWrite(_pinNum,LOW);
+     }
 };
 
 Led firstLed(13);
@@ -21,6 +29,8 @@ void setup() {
   Serial.begin(115200);
   Serial.println( firstLed.getPinNum());
   Serial.println( secondLed.getPinNum());
+  firstLed.on();
+  secondLed.on();
   }
 
 void loop() {
