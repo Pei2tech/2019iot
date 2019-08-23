@@ -5,6 +5,11 @@ class Led{
   public:
     Led(byte pin){
       _pinNum = pin;
+      pinMode(_pinNum,OUTPUT);
+     }
+
+     byte getPinNum(){
+        return _pinNum;
      }
 };
 
@@ -14,8 +19,8 @@ Led secondLed(12);
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
-  Serial.println( firstLed._pinNum);
-  Serial.println( secondLed._pinNum);
+  Serial.println( firstLed.getPinNum());
+  Serial.println( secondLed.getPinNum());
   }
 
 void loop() {
