@@ -17,5 +17,6 @@ unsigned long SwitchButton::getStateChangeCount() {
       _stateChangeCount++;
     }
   }
+
   return _stateChangeCount;
 }
