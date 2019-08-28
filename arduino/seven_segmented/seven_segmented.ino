@@ -4,7 +4,7 @@
 //***********************************************************
 // 七段顯示器製作倒數功能 (v1)
 
-byte digits[10][7] = { 
+byte digits[10][7] = {
   { 1, 1, 1, 1, 1, 1, 0 }, // = 0
   { 0, 1, 1, 0, 0, 0, 0 }, // = 1
   { 1, 1, 0, 1, 1, 0, 1 }, // = 2
@@ -16,10 +16,31 @@ byte digits[10][7] = {
   { 1, 1, 1, 1, 1, 1, 1 }, // = 8
   { 1, 1, 1, 0, 0, 1, 1 } // = 9
 };
-void setup() {
 
+byte mapArdiuinoPin[] = {2, 3, 4, 5, 6, 7, 8};
+
+void setup() {
+  Serial.begin(115200);
+  for (byte i = 0; i < 7; i++) {
+    pinMode(mapArdiuinoPin[i], OUTPUT);
+  }
 }
 
 void loop() {
+  if (Serial.available() > 0) {
+    char getDigit = Serial.read();
+    if (getDigit >= 48 && getDigit <= 57) {
+      Serial.println(getDigit);
+      displayDigit(getDigit);
+    } else {
+      Serial.println("error");
+    }
 
+  }
+}
+
+
+void displayDigit(char displayDigit){
+  int displayIndex = (int)displayDigit - 48;
+ 
 }
