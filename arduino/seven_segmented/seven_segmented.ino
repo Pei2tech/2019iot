@@ -42,5 +42,9 @@ void loop() {
 
 void displayDigit(char displayDigit){
   int displayIndex = (int)displayDigit - 48;
- 
+  for(int i=0; i<7 ; i++){
+    bool onePinState = digits[displayIndex][i];
+    byte pinNum = mapArdiuinoPin[i];
+    digitalWrite(pinNum, onePinState);
+  }
 }
