@@ -24,5 +24,6 @@ class SevenSegmented{
   
   public:
   SevenSegmented(byte* pins);
+  void displaySingleNumber(byte n);
 };
 #endif
