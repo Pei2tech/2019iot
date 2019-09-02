@@ -25,7 +25,7 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   digitalWrite(latchPin, LOW);
-  shiftOut(dataPin, clockPin,LSBFIRST,LEDs[0]);
+  shiftOut(dataPin, clockPin,LSBFIRST,LEDs[index]);
   digitalWrite(latchPin, HIGH);
   delay(1000);
   index ++;
