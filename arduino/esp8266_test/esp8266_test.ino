@@ -19,8 +19,11 @@ void setup()
   Serial.println(WiFi.localIP());
 
   //連線firebase
-  Firebase.begin("arduinofirebase-6d104.firebaseio.com", "  
-z5lPWwjZLZuNNcUEelbJdiNaIvnR2Zfq49BuQBAa");
-}
+  Firebase.begin("arduinofirebase-6d104.firebaseio.com", 
+  "z5lPWwjZLZuNNcUEelbJdiNaIvnR2Zfq49BuQBAa");
 
+Firebase.reconnectWiFi(true);
+Firebase.setMaxRetry(firebaseData, 3);
+Firebase.setMaxErrorQueue(firebaseData, 30);
+}
 void loop() {}
