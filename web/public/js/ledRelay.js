@@ -48,8 +48,10 @@ $(document).ready(function(){
         btnState = snapshot.val();
         if (btnState){
             $("a.btn").addClass("btn-open");
+            $(".status").html("開啟")
         }else{
             $("a.btn").removeClass("btn-open");
+            $(".status").html("關閉");
         }
     });
 
