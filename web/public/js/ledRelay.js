@@ -39,11 +39,22 @@ $(function(){
 });
 
 // Initialize Firebase
-var database = firebase.database();
+let database = firebase.database();
+var btnState;
 //firebase
 $(document).ready(function(){
+    database.ref("iot0624/LED").on('value',function(snapshot){
+       //console.log(snapshot.val())
+        btnState = snapshot.val();
+        if (btnState){
+            $("a.btn").addClass("btn-open");
+        }else{
+            $("a.btn").removeClass("btn-open");
+        }
+    });
+
     $("a.btn").on("click",function(event){
         event.preventDefault();
-        $(this).toggleClass("btn-open");
+        database.ref("iot0624/LED").set(!btnState);
     })
 });
