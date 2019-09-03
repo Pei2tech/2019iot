@@ -142,13 +142,9 @@ main{
             font-weight: 400;
             margin-top: 3em;
             border: 1px solid #555;
-        }
-
-        #ledControl .btn-close {
-
             background-color: #666;
-
         }
+
 
         #ledControl .btn-open {
             background-color: #fa3232;

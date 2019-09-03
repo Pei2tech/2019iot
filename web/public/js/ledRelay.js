@@ -38,9 +38,8 @@ $(function(){
     });
 });
 
-//firebase
-$(function () {
-   var firebaseConfig = {
+// Initialize Firebase
+ var firebaseConfig = {
     apiKey: "AIzaSyCBa3cc1A9mlWzDnG_0e9ltIcZhOWiA-tk",
     authDomain: "arduinofirebase-6d104.firebaseapp.com",
     databaseURL: "https://arduinofirebase-6d104.firebaseio.com",
@@ -49,6 +48,11 @@ $(function () {
     messagingSenderId: "775007261514",
     appId: "1:775007261514:web:1d7170ca43c85472"
   };
-  // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+
+//firebase
+$(document).ready(function(){
+    $("a.btn").on("click",function(event){
+        event.preventDefault();
+    })
 });
