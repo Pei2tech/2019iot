@@ -54,5 +54,6 @@ $(function(){
 $(document).ready(function(){
     $("a.btn").on("click",function(event){
         event.preventDefault();
+        $(this).toggleClass("btn-open");
     })
 });
