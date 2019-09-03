@@ -112,14 +112,21 @@ main{
     margin-bottom: 50px;
 }
 
-    /*====================Card Start====================================*/
-        .card-body{
+    /*====================ledControl Start====================================*/
+        #ledControl .card-body{
             background-color: #e6e6e6;
             border: 1px #ccc solid;
             padding:1em 2em;
             margin: 5em;
         }
-    /*====================Card End====================================*/
+
+        #ledControl .card-title {
+            font-weight: 700;
+            font-size: 2em;
+            color: #666;
+            margin-bottom: 0.3em;
+        }
+    /*====================ledControl End====================================*/
 /*========================Main End================================*/
 footer{
     background: #6e7b93;
