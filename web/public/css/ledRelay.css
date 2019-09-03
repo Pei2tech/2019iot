@@ -133,10 +133,8 @@ main{
             letter-spacing: 0.02em;
         }
 
-        #ledControl .btn-primary {
+        #ledControl .btn{
             display: inline-block;
-
-            background-color: #666;
             padding: 0.5em 1em;
             border-radius: 0.3em;
             color: white;
@@ -144,6 +142,16 @@ main{
             font-weight: 400;
             margin-top: 3em;
             border: 1px solid #555;
+        }
+
+        #ledControl .btn-close {
+
+            background-color: #666;
+
+        }
+
+        #ledControl .btn-open {
+            background-color: #fa3232;
         }
     /*====================ledControl End====================================*/
 /*========================Main End================================*/
