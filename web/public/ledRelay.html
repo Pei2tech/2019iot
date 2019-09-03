@@ -1,10 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <title>LED和Relay控制</title>
+    <title>LED-Relay控制中心</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ledRelay.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
+    <script src="js/ledRelay.js"></script>
 </head>
 <body>
+    <div id="wrap">
+        <nav class="clearfix">
+            <h1>IOT CONTROL CENTER</h1>
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">EnterPrice</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#" class="signIn">Sign In</a></li>
+            </ul>
+            <img src="images/menu.png" alt="menu" id="menu">
+        </nav>
+
+        <main>
+            
+        </main>
+        <footer>
+            copyright
+        </footer>
+    </div>
+
+    <div class="alertMessage">
+        <div class="bg"></div>
+
+        <form action="#">
+            請輸入帳號:<br>
+            <input type="email" name="email">
+            <br>
+            請輸入密碼:<br>
+            <input type="password" name="pwd">
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="button" value="取消" class="cancel">
+        </form>
+
+
+
+    </div>
+
 
 </body>
 </html>
