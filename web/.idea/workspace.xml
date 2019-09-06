@@ -43,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/arduino/sevenSeg.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="336">
+              <caret line="38" column="49" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -207,12 +207,12 @@
       <workItem from="1565917784905" duration="7248000" />
       <workItem from="1567473589922" duration="20193000" />
       <workItem from="1567646777566" duration="7502000" />
-      <workItem from="1567733853094" duration="14147000" />
+      <workItem from="1567733853094" duration="15550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96739000" />
+    <option name="totallyTimeSpent" value="98142000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -353,8 +353,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/arduino/sevenSeg.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        <state relative-caret-position="336">
+          <caret line="38" column="49" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="49" />
         </state>
       </provider>
     </entry>
