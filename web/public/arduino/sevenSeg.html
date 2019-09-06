@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/ledRelay.css">
+    <link rel="stylesheet" href="../css/sevenSeg.css">
     <script src="../js/jquery-3.4.1.min.js"></script>
     <script src="/__/firebase/6.5.0/firebase-app.js"></script>
     <script src="/__/firebase/6.5.0/firebase-database.js"></script>
@@ -33,11 +34,22 @@
 
                 </div>
             </section>
-            <div class="card" id="ledControl">
+            <div class="card sevenSeg" id="ledControl" >
                 <div class="card-body">
                     <h5 class="card-title">七段顯示控制中心</h5>
-                    <p class="card-text">控制Firebase 及時資料庫的LED欄位，可遠端控制家庭燈具</p>
-                    <a href="#" class="btn ">LED 狀態:<span class="status">關閉</span></a>
+                    <p class="card-text">使用網頁介面操控遠端的七段顯示器</p>
+                    <div class="digits">
+                        <button type="button">0</button>
+                        <button type="button">1</button>
+                        <button type="button">2</button>
+                        <button type="button">3</button>
+                        <button type="button">4</button>
+                        <button type="button">5</button>
+                        <button type="button">6</button>
+                        <button type="button">7</button>
+                        <button type="button">8</button>
+                        <button type="button">9</button>
+                    </div>
                 </div>
             </div>
 
