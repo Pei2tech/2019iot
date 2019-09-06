@@ -136,6 +136,7 @@ main{
     }
 
 
+
     /*====================產品圖片 end====================*/
     /*====================ledControl Start====================================*/
     #ledControl .card-body {
@@ -175,6 +176,19 @@ main{
             background-color: #fa3232;
         }
     /*====================ledControl End====================================*/
+
+    /*=========================youtube start================================*/
+    section.demoMovie{
+        width:50%;
+        margin:0 auto;
+    }
+    section.demoMovie iframe{
+        width:100%;
+        height: 380px;
+        display:block;
+        margin:0 auto;
+    }
+    /*=========================youtube start================================*/
 /*========================Main End================================*/
 footer{
     background: #6e7b93;
