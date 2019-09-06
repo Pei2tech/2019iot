@@ -180,15 +180,25 @@ main{
     /*=========================youtube start================================*/
     section.demoMovie{
         width:50%;
+        height: 380px;
         margin:0 auto;
+
     }
     section.demoMovie iframe{
         width:100%;
-        height: 380px;
+        height:100%;
         display:block;
         margin:0 auto;
     }
     /*=========================youtube start================================*/
+
+    /*======================== code start =================================*/
+    section.code{
+
+        width:80%;
+        margin:5em auto;
+    }
+    /*======================== code end =================================*/
 /*========================Main End================================*/
 footer{
     background: #6e7b93;
@@ -311,6 +321,15 @@ footer{
         margin-right: auto;
     }
     /*====================產品圖片 start====================*/
+
+    /*=========================youtube start================================*/
+    section.demoMovie{
+        width:80%;
+        height:380px;
+        margin:0 auto;
+    }
+
+    /*=========================youtube start================================*/
 
     footer {
         background: #938245;
