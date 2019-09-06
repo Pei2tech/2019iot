@@ -14,3 +14,9 @@
     background-color: #666666;
     border: solid 1px #FFFFFF;
 }
+
+.sevenSeg .digits button:nth-child(3){
+
+     background-color: #a9201b;
+
+}
