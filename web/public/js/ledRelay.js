@@ -2,7 +2,7 @@
 $(function () {
     $.ajax({
         dataType: "json",
-        url: "menu.json",
+        url: "../menu.json",
         success: function(data){
             var menuHtml = "";
             jQuery.each(data,function(key,value){
