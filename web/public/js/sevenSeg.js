@@ -58,22 +58,10 @@ $(function(){
 // Initialize Firebase
 let database = firebase.database();
 var btnState;
+
 //firebase
 $(document).ready(function(){
-    database.ref("iot0624/LED").on('value',function(snapshot){
-       //console.log(snapshot.val())
-        btnState = snapshot.val();
-        if (btnState){
-            $("a.btn").addClass("btn-open");
-            $(".status").html("開啟")
-        }else{
-            $("a.btn").removeClass("btn-open");
-            $(".status").html("關閉");
-        }
+    $(".digits").on("click",function () {
+        console.log("好痛");
     });
-
-    $("a.btn").on("click",function(event){
-        event.preventDefault();
-        database.ref("iot0624/LED").set(!btnState);
-    })
 });
