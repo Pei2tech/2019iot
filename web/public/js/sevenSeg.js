@@ -64,7 +64,12 @@ $(document).ready(function(){
     //read firebase data of digit node
     let digitsRef = database.ref('iot0624/digit');
     digitsRef.on('value',function(snapshot){
-        console.log(snapshot.val());
+        let selectedValue = snapshot.val();
+        $(".digits button").removeClass("selected").each(function(index,element){
+            if(index == selectedValue){
+               $(element).addClass("selected");
+            }
+        });
     });
 
     $(".digits").on("click",function (event) {

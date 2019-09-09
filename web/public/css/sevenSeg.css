@@ -15,8 +15,11 @@
     border: solid 1px #FFFFFF;
 }
 
-.sevenSeg .digits button:nth-child(3){
-
+.sevenSeg .digits .selected{
      background-color: #a9201b;
+}
+
+
+
 
 }
