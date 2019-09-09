@@ -61,6 +61,12 @@ let database = firebase.database();
 
 //firebase
 $(document).ready(function(){
+    //read firebase data of digit node
+    let digitsRef = database.ref('iot0624/digit');
+    digitsRef.on('value',function(snapshot){
+        console.log(snapshot.val());
+    });
+
     $(".digits").on("click",function (event) {
         let contentText = event.target.innerText;
 
