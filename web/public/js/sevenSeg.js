@@ -57,11 +57,12 @@ $(function(){
 
 // Initialize Firebase
 let database = firebase.database();
-var btnState;
+
 
 //firebase
 $(document).ready(function(){
-    $(".digits").on("click",function () {
-        console.log("好痛");
+    $(".digits").on("click",function (event) {
+        let contentText = event.target.innerText;
+
     });
 });
