@@ -1,3 +1,5 @@
+#include "Timer.h"
+
 
 #define tempPin A0
 #define pin0 D1
@@ -9,6 +11,9 @@
 #define latchPin D6
 #define clockPin D7
 
+//delay物件
+Timer t;
+float tempC;
 
 //共陽
 const byte LEDs[10] = {
@@ -36,22 +41,33 @@ void setup()
   pinMode(dataPin,OUTPUT);
   pinMode(latchPin,OUTPUT);
   pinMode(clockPin,OUTPUT);
+  t.every(1000, oneSecondRun);
+  t.every(5,dotZeroZeroFiveRun);
 }
 
 void loop()
 {
- float tempC = getTemperature();
- Serial.println(tempC);
- displayLED(tempC);
+ t.update();
+ 
+ 
  
 
 }
 
+void oneSecondRun(){
+  tempC = getTemperature();
+  Serial.println(tempC);
+}
+
+void dotZeroZeroFiveRun(){
+  displayLED(tempC);
+}
+
 float getTemperature(){
-  float tempC;
-  tempC = analogRead(tempPin);           //read the value from the sensor
-  tempC = (tempC / 1024 * 3.3 / 0.01)-2;
-  return tempC;
+  float temp;
+  temp = analogRead(tempPin);           //read the value from the sensor
+  temp = (temp / 1024 * 3.3 / 0.01)-2;
+  return temp;
 }
 
 void displayLED(float numbers){
