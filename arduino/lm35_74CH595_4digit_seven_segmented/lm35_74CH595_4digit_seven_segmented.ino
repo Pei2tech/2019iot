@@ -1,5 +1,9 @@
 
 #define tempPin A0
+#define pin0 D1
+#define pin1 D2
+#define pin2 D3
+#define pin3 D4
 
 float tempC;
 
