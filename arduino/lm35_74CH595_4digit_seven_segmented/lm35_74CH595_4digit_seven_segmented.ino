@@ -10,18 +10,18 @@
 #define clockPin D7
 
 
-
+//共陽
 const byte LEDs[10] = {
-  B01111110, //0
-  B00110000, //1
-  B01101101, //2
-  B01111001, //3
-  B00110011, //4
-  B01011011, //5
-  B01011111, //6
-  B01110000,//7
-  B01111111,//8
-  B01110011  //9
+  B10000001, //0 
+  B11001111, //1 
+  B10010010, //2 
+  B10000110, //3 
+  B11001100, //4 
+  B10100100, //5 
+  B10100000, //6 
+  B10001111,//7 
+  B10000000,//8 
+  B10001100  //9 
 };
 
 
@@ -42,10 +42,10 @@ void loop()
 {
  float tempC = getTemperature();
  Serial.println(tempC);
-  digitalWrite(pin0,LOW);
-  digitalWrite(pin1,HIGH);
-  digitalWrite(pin2,HIGH);
-  digitalWrite(pin3,HIGH);
+  digitalWrite(pin0,HIGH);
+  digitalWrite(pin1,LOW);
+  digitalWrite(pin2,LOW);
+  digitalWrite(pin3,LOW);
   digitalWrite(latchPin, LOW);
   shiftOut(dataPin, clockPin,LSBFIRST,LEDs[0]);
   digitalWrite(latchPin, HIGH);
