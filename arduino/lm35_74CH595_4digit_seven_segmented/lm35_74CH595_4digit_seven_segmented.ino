@@ -44,7 +44,7 @@ void loop()
  Serial.println(tempC);
  displayLED(tempC);
  
-  delay(1000);
+
 }
 
 float getTemperature(){
@@ -57,6 +57,7 @@ float getTemperature(){
 void displayLED(float numbers){
   numbers = 25.73;
   for(int i=0;i<=3;i++){
+    byte dotNumber;
     //處理位數
     switch(i){      
       case 0:
@@ -67,13 +68,15 @@ void displayLED(float numbers){
         digitalWrite(latchPin, LOW);
         shiftOut(dataPin, clockPin,LSBFIRST,LEDs[0]);
         digitalWrite(latchPin, HIGH);
+        
         break;
       case 1:
         digitalWrite(pin0,LOW);
         digitalWrite(pin1,HIGH);
         digitalWrite(pin2,LOW);
         digitalWrite(pin3,LOW);
-        digitalWrite(latchPin, LOW);
+        digitalWrite(latchPin, LOW); 
+             
         shiftOut(dataPin, clockPin,LSBFIRST,LEDs[1]);
         digitalWrite(latchPin, HIGH);
         break;
@@ -82,8 +85,9 @@ void displayLED(float numbers){
         digitalWrite(pin1,LOW);
         digitalWrite(pin2,HIGH);
         digitalWrite(pin3,LOW);
-        digitalWrite(latchPin, LOW);
-        shiftOut(dataPin, clockPin,LSBFIRST,LEDs[2]);
+        digitalWrite(latchPin, LOW); 
+        dotNumber = LEDs[1] & B01111111;       
+        shiftOut(dataPin, clockPin,LSBFIRST,dotNumber);
         digitalWrite(latchPin, HIGH);
         break;
       case 3:
@@ -96,5 +100,6 @@ void displayLED(float numbers){
         digitalWrite(latchPin, HIGH);
         break;
     }
+    delay(5);
   }
 }
