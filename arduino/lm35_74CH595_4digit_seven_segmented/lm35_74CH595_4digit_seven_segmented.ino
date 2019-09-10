@@ -5,6 +5,10 @@
 #define pin2 D3
 #define pin3 D4
 
+#define dataPin D5
+#define latchPin D6
+#define clockPin D7
+
 float tempC;
 
 
