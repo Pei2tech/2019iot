@@ -42,13 +42,8 @@ void loop()
 {
  float tempC = getTemperature();
  Serial.println(tempC);
-  digitalWrite(pin0,HIGH);
-  digitalWrite(pin1,LOW);
-  digitalWrite(pin2,LOW);
-  digitalWrite(pin3,LOW);
-  digitalWrite(latchPin, LOW);
-  shiftOut(dataPin, clockPin,LSBFIRST,LEDs[0]);
-  digitalWrite(latchPin, HIGH);
+ displayLED(tempC);
+ 
   delay(1000);
 }
 
@@ -57,4 +52,49 @@ float getTemperature(){
   tempC = analogRead(tempPin);           //read the value from the sensor
   tempC = (tempC / 1024 * 3.3 / 0.01)-2;
   return tempC;
+}
+
+void displayLED(float numbers){
+  numbers = 25.73;
+  for(int i=0;i<=3;i++){
+    //處理位數
+    switch(i){      
+      case 0:
+        digitalWrite(pin0,HIGH);
+        digitalWrite(pin1,LOW);
+        digitalWrite(pin2,LOW);
+        digitalWrite(pin3,LOW);
+        digitalWrite(latchPin, LOW);
+        shiftOut(dataPin, clockPin,LSBFIRST,LEDs[0]);
+        digitalWrite(latchPin, HIGH);
+        break;
+      case 1:
+        digitalWrite(pin0,LOW);
+        digitalWrite(pin1,HIGH);
+        digitalWrite(pin2,LOW);
+        digitalWrite(pin3,LOW);
+        digitalWrite(latchPin, LOW);
+        shiftOut(dataPin, clockPin,LSBFIRST,LEDs[1]);
+        digitalWrite(latchPin, HIGH);
+        break;
+      case 2:
+        digitalWrite(pin0,LOW);
+        digitalWrite(pin1,LOW);
+        digitalWrite(pin2,HIGH);
+        digitalWrite(pin3,LOW);
+        digitalWrite(latchPin, LOW);
+        shiftOut(dataPin, clockPin,LSBFIRST,LEDs[2]);
+        digitalWrite(latchPin, HIGH);
+        break;
+      case 3:
+        digitalWrite(pin0,LOW);
+        digitalWrite(pin1,LOW);
+        digitalWrite(pin2,LOW);
+        digitalWrite(pin3,HIGH);
+        digitalWrite(latchPin, LOW);
+        shiftOut(dataPin, clockPin,LSBFIRST,LEDs[3]);
+        digitalWrite(latchPin, HIGH);
+        break;
+    }
+  }
 }
