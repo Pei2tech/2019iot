@@ -59,13 +59,18 @@ $(function(){
 $(function(){
     if(window.innerWidth > 991){
       $(".displayArea .tab").hide();
+    }else{
+       $(".tabcontent").hide().first().show();
+
     }
     $(window).resize(function(event){
         if(window.innerWidth > 991){
             $(".displayArea .tab").hide();
+            $(".tabcontent").show();
             console.log("run");
         }else{
              $(".displayArea .tab").show();
+             $(".tabcontent").hide().first().show();
         }
     });
 });

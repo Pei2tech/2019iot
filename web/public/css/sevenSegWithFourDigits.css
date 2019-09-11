@@ -13,51 +13,63 @@ section.itemImage {
 }
 
 
-
-.displayArea{
+.displayArea {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
 
-.displayArea .tabcontent{
+.displayArea .tabcontent {
     background-color: #555555;
-    width:30%;
+    width: 30%;
     height: 200px;
 
 }
 
-.tabcontent h3{
+.tabcontent h3 {
     font-size: 2em;
-    padding:0.3em;
+    padding: 0.3em;
     text-align: center;
-    color:white;
+    color: white;
 }
 
-.tabcontent p{
+.tabcontent p {
     font-family: 'Orbitron', sans-serif;
-    font-size:3em;
+    font-size: 3em;
     text-align: center;
     letter-spacing: 0.05em;
     line-height: 2.3em;
-    color:white;
+    color: white;
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
-.displayArea{
-    display: block;
-    justify-content: flex-start;
-}
+    .displayArea {
+        display: block;
+        justify-content: flex-start;
+    }
+
+    .displayArea .tabcontent {
+
+        width: 100%;
+
+    }
 
 
 }
 
 
-@media  (max-width: 767px) {
+@media (max-width: 767px) {
 
-.displayArea{
-    display: block;
-    justify-content: flex-start;
-}
+    .displayArea {
+        display: block;
+        justify-content: flex-start;
+    }
+
+    .displayArea .tabcontent {
+
+        width: 100%;
+
+    }
 
 }
 
