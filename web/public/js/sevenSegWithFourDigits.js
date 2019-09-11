@@ -73,6 +73,26 @@ $(function(){
              $(".tabcontent").hide().first().show();
         }
     });
+
+    $('.tab').on("click",function(event){
+        event.preventDefault();
+        switch (event.target.textContent){
+            case "攝氐":
+                $(".tabcontent").hide().first().show();
+                break;
+
+            case "華氐":
+                 $(".tabcontent").hide().eq(1).show();
+                break;
+
+           case "絕對溫度":
+               console.log("kelvin");
+               $(".tabcontent").hide().eq(2).show();
+                break;
+
+        }
+
+    });
 });
 
 // Initialize Firebase
