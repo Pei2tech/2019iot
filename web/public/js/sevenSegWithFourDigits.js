@@ -79,10 +79,12 @@ $(document).ready(function(){
     //read firebase data of digit node
  database.ref("iot0624/temperature").on('value',function(snapshot){
        //console.log(snapshot.val())
-        let tempValue = snapshot.val();
-        $('#ces').text(tempValue.toFixed(2));
-        $('#fahrenheit').text(tempValue.toFixed(2));
-        $('#kelvin').text(tempValue.toFixed(2));
+        let cesValue = snapshot.val();
+        let fahrenValue = cesValue * 1.8 + 32;
+        let kelvinValue = cesValue + 273.15;
+        $('#ces').text(cesValue.toFixed(2));
+        $('#fahrenheit').text(fahrenValue.toFixed(2));
+        $('#kelvin').text(kelvinValue.toFixed(2));
 
     });
 
