@@ -57,11 +57,11 @@ $(function(){
 
 //製作tab
 $(function(){
-    if(window.innerWidth > 767){
+    if(window.innerWidth > 991){
       $(".displayArea .tab").hide();
     }
     $(window).resize(function(event){
-        if(window.innerWidth > 767){
+        if(window.innerWidth > 991){
             $(".displayArea .tab").hide();
             console.log("run");
         }else{
