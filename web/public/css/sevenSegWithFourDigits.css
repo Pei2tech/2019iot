@@ -15,10 +15,22 @@ section.itemImage {
     background-color: #93435e;
     width:30%;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+.displayArea{
+    display: block;
+    justify-content: flex-start;
+}
+
+
+}
+
 
 @media  (max-width: 767px) {
 
+.displayArea{
+    display: block;
+    justify-content: flex-start;
+}
 
-   
 }
 
