@@ -1,4 +1,24 @@
+#ledControl .card-body {
+    width: 80%;
+}
 
 section.itemImage {
     width: 80%;
 }
+
+.displayArea{
+    display: flex;
+    justify-content: space-between;
+}
+
+.displayArea .tabcontent{
+    background-color: #93435e;
+    width:30%;
+}
+
+@media  (max-width: 767px) {
+
+
+   
+}
+
