@@ -55,6 +55,21 @@ $(function(){
     });
 });
 
+//製作tab
+$(function(){
+    if(window.innerWidth > 767){
+      $(".displayArea .tab").hide();
+    }
+    $(window).resize(function(event){
+        if(window.innerWidth > 767){
+            $(".displayArea .tab").hide();
+            console.log("run");
+        }else{
+             $(".displayArea .tab").show();
+        }
+    });
+});
+
 // Initialize Firebase
 let database = firebase.database();
 
@@ -62,19 +77,5 @@ let database = firebase.database();
 //firebase
 $(document).ready(function(){
     //read firebase data of digit node
-    let iot0624Ref = database.ref('iot0624');
-    iot0624Ref.child("digit").on('value',function(snapshot){
-        let selectedValue = snapshot.val();
-        $(".digits button").removeClass("selected").each(function(index,element){
-            if(index == selectedValue){
-               $(element).addClass("selected");
-            }
-        });
-    });
 
-    $(".digits").on("click",function (event) {
-        let contentText = event.target.innerText;
-        iot0624Ref.update({'digit':parseInt(contentText)});
-
-    });
 });
