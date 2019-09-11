@@ -6,6 +6,14 @@ section.itemImage {
     width: 80%;
 }
 
+#ledControl .card-text {
+    line-height: 1.2em;
+    letter-spacing: 0.02em;
+    font-size: 1.3em;
+}
+
+
+
 .displayArea{
     display: flex;
     justify-content: space-between;

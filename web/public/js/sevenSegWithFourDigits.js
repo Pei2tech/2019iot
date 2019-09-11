@@ -77,5 +77,13 @@ let database = firebase.database();
 //firebase
 $(document).ready(function(){
     //read firebase data of digit node
+ database.ref("iot0624/temperature").on('value',function(snapshot){
+       //console.log(snapshot.val())
+        let tempValue = snapshot.val();
+        $('#ces').text(tempValue.toFixed(2));
+        $('#fahrenheit').text(tempValue.toFixed(2));
+        $('#kelvin').text(tempValue.toFixed(2));
+
+    });
 
 });
