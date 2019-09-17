@@ -1,3 +1,6 @@
+#! /usr/bin/python3
+
+#pip3 install RPi.GPIO
 from tkinter import *
 import RPi.GPIO as GPIO
 
@@ -17,6 +20,7 @@ def userClick():
     else:
         buttonText.set('ON')
         GPIO.output(25, GPIO.LOW)
+    
     
 
 if __name__ == '__main__':
