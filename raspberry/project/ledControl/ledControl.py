@@ -1,8 +1,18 @@
 #! /usr/bin/python3
-
 #pip3 install RPi.GPIO
+
 from tkinter import *
 import RPi.GPIO as GPIO
+
+import firebase_admin
+from firebase_admin import credentials
+from firebase_admin import db
+
+cred = credentials.Certificate('/home/pi/Documents/raspberryfirebase-firebase-adminsdk-q4ht6-3282b25b5b.json')
+firebase_admin.initialize_app(cred, {
+    'databaseURL': 'https://raspberryfirebase.firebaseio.com/',
+    'databaseAuthVariableOverride': None
+})
 
 
 
