@@ -14,12 +14,20 @@ firebase_admin.initialize_app(cred, {
     'databaseAuthVariableOverride': None
 })
 
+
 ledControlRef = db.reference(path='iot0624/lcdControl')
 
 
-
 def appInterface(window):
-    lcdState= ledControlRef.get()
+    try:
+        lcdState= ledControlRef.get();
+    except FirebaseError as err:
+        print("error connect to Firebase: {}".format(err));
+    except ValueError as err:
+        print("valueError: {}".format(err));
+    except:
+        print("Error");
+        
     if lcdState:
         buttonText.set("OFF")
     else:
@@ -30,13 +38,16 @@ def appInterface(window):
     frame.pack(padx=10,pady=10);
 
 def userClick():
-    text = buttonText.get();
-    if text == 'ON':
-        buttonText.set('OFF')
-        GPIO.output(25, GPIO.HIGH)
-    else:
+    lcdState= ledControlRef.get();    
+    if lcdState:
         buttonText.set('ON')
         GPIO.output(25, GPIO.LOW)
+    else:
+        buttonText.set('OFF')
+        GPIO.output(25, GPIO.HIGH)
+    
+    ledControlRef.set(not lcdState);
+    
     
     
 
