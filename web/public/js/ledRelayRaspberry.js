@@ -54,6 +54,22 @@ $(function(){
         }
     });
 });
+
+// Initialize Firebase
+
+// Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAHgSjntOofP5uFmmkHLTmuyCsS3f9OeSc",
+    authDomain: "raspberryfirebase.firebaseapp.com",
+    databaseURL: "https://raspberryfirebase.firebaseio.com",
+    projectId: "raspberryfirebase",
+    storageBucket: "raspberryfirebase.appspot.com",
+    messagingSenderId: "929629322713",
+    appId: "1:929629322713:web:f46ba539fe32c1868eedc8"
+  };
+  // Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
 //Authentication Of Firebase
 firebase.auth().signInWithEmailAndPassword("robert1@gmail.com", "123456")
     .then(function(result){
@@ -66,12 +82,13 @@ firebase.auth().signInWithEmailAndPassword("robert1@gmail.com", "123456")
   console.log(errorCode,errorMessage)
   // ...
 });
-// Initialize Firebase
+
+//提取realtime database
 let database = firebase.database();
 var btnState;
 //firebase
 $(document).ready(function(){
-    database.ref("iot0624/LED").on('value',function(snapshot){
+    database.ref("iot0624/lcdControl").on('value',function(snapshot){
        //console.log(snapshot.val())
         btnState = snapshot.val();
         if (btnState){
@@ -85,6 +102,6 @@ $(document).ready(function(){
 
     $("a.btn").on("click",function(event){
         event.preventDefault();
-        database.ref("iot0624/LED").set(!btnState);
+        database.ref("iot0624/lcdControl").set(!btnState);
     })
 });
