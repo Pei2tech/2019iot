@@ -14,10 +14,17 @@ firebase_admin.initialize_app(cred, {
     'databaseAuthVariableOverride': None
 })
 
+ledControlRef = db.reference(path='iot0624/lcdControl')
 
 
-def appInterface(window):    
-    buttonText.set("ON")
+
+def appInterface(window):
+    lcdState= ledControlRef.get()
+    if lcdState:
+        buttonText.set("OFF")
+    else:
+        buttonText.set("ON")
+    
     frame = Frame(window,borderwidth=2,relief=GROOVE);
     ledButton = Button(frame,textvariable = buttonText,padx=30,pady=10,command=userClick,width=10).pack(padx=40,pady=40);
     frame.pack(padx=10,pady=10);
