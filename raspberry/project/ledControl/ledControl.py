@@ -4,6 +4,7 @@
 from tkinter import *
 import RPi.GPIO as GPIO
 
+from firebase_admin import auth
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
@@ -11,8 +12,10 @@ from firebase_admin import db
 cred = credentials.Certificate('/home/pi/Documents/raspberryfirebase-firebase-adminsdk-q4ht6-3282b25b5b.json')
 firebase_admin.initialize_app(cred, {
     'databaseURL': 'https://raspberryfirebase.firebaseio.com/',
-    'databaseAuthVariableOverride': None
+    'databaseAuthVariableOverride': {'uid':'u6CC1XKmMSgfc6G748JnIUsypk43'}
 })
+
+
 
 
 ledControlRef = db.reference(path='iot0624/lcdControl')
