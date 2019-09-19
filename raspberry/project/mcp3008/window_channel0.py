@@ -11,7 +11,8 @@ class MCP3008app:
         firebase_admin.initialize_app(cred, {'databaseURL': 'https://raspberryfirebase.firebaseio.com/',
                                              'databaseAuthVariableOverride': {'uid': 'NatxhTYp4AaiI2Uge648cNQjSIE3'}
                                              })
-        #self.registerRef = ref = db.reference('/some_resource')
+        self.registerRef  = db.reference('iot0624/MCP3008/register')
+        print(self.registerRef.get())
         self.createGUI();
         
     def createGUI(self):
