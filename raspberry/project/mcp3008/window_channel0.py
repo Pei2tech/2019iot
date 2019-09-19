@@ -8,11 +8,12 @@ class MCP3008app:
         
     def createGUI(self):
         mainFrame = Frame(self.window,borderwidth=2,relief=GROOVE);
-        Label(mainFrame,text="可變電阻:").pack();        
-        scale=Scale(mainFrame,from_=0, to=100, orient=HORIZONTAL,length=300,state=DISABLED)
+        Label(mainFrame,text="可變電阻:").pack();
+        scaleValue = DoubleVar();
+        scaleValue.set(67)
+        Scale(mainFrame,from_=0, to=100,variable=scaleValue, orient=HORIZONTAL,length=400,state=DISABLED).pack()
         
-        scale.pack()
-        scale.set(100)
+        
         mainFrame.pack(padx=30,pady=30);
 
 
