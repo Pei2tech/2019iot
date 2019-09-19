@@ -16,8 +16,8 @@ class MCP3008app:
         self.registerRef  = db.reference('iot0624/MCP3008/register')
         print(self.registerRef.get())
         self.createGUI();
-        self.timer = Timer(1.0,self.checkRegister);
-        self.timer.start();
+        Timer(1.0,self.checkRegister).start();
+        
         
         
     def createGUI(self):
@@ -33,6 +33,8 @@ class MCP3008app:
     def checkRegister(self):
         value = self.channel0.value;
         print("now value:{}".format(value));
+        Timer(1.0,self.checkRegister).start();
+        
 
 
 if __name__ == "__main__":
