@@ -8,7 +8,7 @@ from threading import Timer
 class MCP3008app:
     def __init__(self,w):
         self.window = w;
-        self.channel0 = MCP3008(0,max_voltage=5.0);
+        self.channel0 = MCP3008(0);
         cred = credentials.Certificate('/home/pi/Documents/raspberryfirebase-firebase-adminsdk-q4ht6-3282b25b5b.json')
         firebase_admin.initialize_app(cred, {'databaseURL': 'https://raspberryfirebase.firebaseio.com/',
                                              'databaseAuthVariableOverride': {'uid': 'NatxhTYp4AaiI2Uge648cNQjSIE3'}
@@ -33,6 +33,7 @@ class MCP3008app:
     def checkRegister(self):
         value = self.channel0.value;
         print("now value:{}".format(value));
+        self.registerRef.set(int(value*100))
         Timer(1.0,self.checkRegister).start();
         
 
