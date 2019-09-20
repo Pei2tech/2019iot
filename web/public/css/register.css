@@ -161,22 +161,6 @@ main{
             letter-spacing: 0.02em;
         }
 
-        #control .btn{
-            display: inline-block;
-            padding: 0.5em 1em;
-            border-radius: 0.3em;
-            color: white;
-            text-decoration: none;
-            font-weight: 400;
-            margin-top: 3em;
-            border: 1px solid #555;
-            background-color: #666;
-        }
-
-
-        #control .btn-open {
-            background-color: #fa3232;
-        }
     /*====================ledControl End====================================*/
 
     /*=========================youtube start================================*/
@@ -251,7 +235,10 @@ footer{
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    #control  {
 
+        width: 100%;
+        }
 
     footer {
         background: #93435e;
@@ -259,6 +246,7 @@ footer{
 }
 
 @media  (max-width: 767px) {
+
 
     nav {
         height: inherit;
@@ -318,7 +306,10 @@ footer{
         color:white;
     }
     /*===================Main Start=====================================*/
-    #ledControl .card-body {
+     #control  {
+        width: 100%;
+        }
+    #control .card-body {
         width: 80%;
     }
 

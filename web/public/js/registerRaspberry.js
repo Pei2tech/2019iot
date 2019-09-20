@@ -85,23 +85,8 @@ firebase.auth().signInWithEmailAndPassword("robert1@gmail.com", "123456")
 
 //提取realtime database
 let database = firebase.database();
-var btnState;
+
 //firebase
 $(document).ready(function(){
-    database.ref("iot0624/lcdControl").on('value',function(snapshot){
-       //console.log(snapshot.val())
-        btnState = snapshot.val();
-        if (btnState){
-            $("a.btn").addClass("btn-open");
-            $(".status").html("開啟")
-        }else{
-            $("a.btn").removeClass("btn-open");
-            $(".status").html("關閉");
-        }
-    });
-
-    $("a.btn").on("click",function(event){
-        event.preventDefault();
-        database.ref("iot0624/lcdControl").set(!btnState);
-    })
+   
 });
