@@ -16,7 +16,10 @@ class MCP3008app:
         self.registerRef  = db.reference('iot0624/MCP3008/register')
         print(self.registerRef.get())        
         self.createGUI();
-        self.listener = self.registerRef.listen(self.listenerJob)
+        try:
+            self.listener = self.registerRef.listen(self.listenerJob)
+        except FirebaseError as error:
+            pass;
         Timer(1.0,self.checkRegister).start();
         
         
