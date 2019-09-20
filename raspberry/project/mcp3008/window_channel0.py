@@ -14,8 +14,9 @@ class MCP3008app:
                                              'databaseAuthVariableOverride': {'uid': 'NatxhTYp4AaiI2Uge648cNQjSIE3'}
                                              })
         self.registerRef  = db.reference('iot0624/MCP3008/register')
-        print(self.registerRef.get())
+        print(self.registerRef.get())        
         self.createGUI();
+        self.listener = self.registerRef.listen(self.listenerJob)
         Timer(1.0,self.checkRegister).start();
         
         
@@ -31,10 +32,13 @@ class MCP3008app:
         mainFrame.pack(padx=30,pady=30);
     
     def checkRegister(self):
-        value = self.channel0.value;
+        value = int(self.channel0.value *100);
         print("now value:{}".format(value));
-        self.registerRef.set(int(value*100))
-        Timer(1.0,self.checkRegister).start();
+        self.registerRef.set(value);        
+        Timer(0.5,self.checkRegister).start();
+        
+    def listenerJob(self, event):
+        self.scaleValue.set(event.data);
         
 
 
