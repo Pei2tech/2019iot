@@ -89,14 +89,19 @@ firebase.auth().signInWithEmailAndPassword("robert1@gmail.com", "123456")
 //提取realtime database
 let database = firebase.database();
 
+
 //firebase
 $(document).ready(function(){
-    $("#myBar")
+    let registerRef = database.ref("iot0624/MCP3008/register");
+    registerRef.on('value',function(snapshot) {
+        let registerValue = snapshot.val();
+        $("#myBar")
         .finish()
         .animate(
             {
-            "width":"50%"
+            "width":registerValue.toString() + "%"
             }
-        ,200,"linear")
-        .text("50%");
+            ,200,"linear")
+        .text(registerValue.toString() + "%");
+    });
 });
