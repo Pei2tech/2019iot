@@ -140,7 +140,7 @@ main{
 
 
     /*====================產品圖片 end====================*/
-    /*====================ledControl Start====================================*/
+    /*====================Control Start====================================*/
         #control  {
         background-color: #e6e6e6;
         border: 1px #ccc solid;
@@ -161,7 +161,19 @@ main{
             letter-spacing: 0.02em;
         }
 
-    /*====================ledControl End====================================*/
+        #control #myProgress {
+            margin-top:3em;
+            width: 100%;
+            background-color: grey;
+        }
+
+        #control #myBar {
+            width: 10%;
+            height: 30px;
+            background-color: green;
+        }
+
+    /*====================Control End====================================*/
 
     /*=========================youtube start================================*/
     section.demoMovie{

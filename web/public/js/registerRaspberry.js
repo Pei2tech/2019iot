@@ -83,10 +83,13 @@ firebase.auth().signInWithEmailAndPassword("robert1@gmail.com", "123456")
   // ...
 });
 
+
+
+//progress interface
 //提取realtime database
 let database = firebase.database();
 
 //firebase
 $(document).ready(function(){
-   
+    $("#myBar").width("50%");
 });
