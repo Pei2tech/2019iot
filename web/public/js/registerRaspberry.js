@@ -91,5 +91,12 @@ let database = firebase.database();
 
 //firebase
 $(document).ready(function(){
-    $("#myBar").width("50%");
+    $("#myBar")
+        .finish()
+        .animate(
+            {
+            "width":"50%"
+            }
+        ,200,"linear")
+        .text("50%");
 });
