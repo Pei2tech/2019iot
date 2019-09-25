@@ -1,4 +1,7 @@
 from tkinter import *
+from gpiozero import Buzzer
+from threading import Timer
+
 class App:
     def __init__(self,window):
         #buzzer button
@@ -7,10 +10,18 @@ class App:
         buzzerFrame.pack();
         
         #buzzer init
+        self.buzzer = Buzzer(16);
+        
         
     def userClickBuzzer(self):
         print("user click");
-        pass;
+        t = Timer(0.3,self.closeBuzzer);
+        t.start();
+        self.buzzer.on();
+        
+    
+    def closeBuzzer(self):
+        self.buzzer.off();
 
 if __name__ == "__main__":
     root = Tk();
