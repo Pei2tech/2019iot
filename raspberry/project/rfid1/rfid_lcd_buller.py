@@ -18,15 +18,15 @@ class App:
         #grid
         #entry1Frame
         
-        Label(lcdFrame,text="name").grid(row=0, column=0, sticky=W);
-        Entry(lcdFrame,textvariable=self.entryString1,width=16).grid(row=0, column=1, sticky=W);
+        Label(lcdFrame,text="name").grid(row=0, column=0, sticky=W,padx=5,pady=5);
+        Entry(lcdFrame,textvariable=self.entryString1,width=16).grid(row=0, column=1, sticky=W,padx=5,pady=5);
         self.entryString1.set("First Line");
         
-        Label(lcdFrame,text="pwd").grid(row=1, column=0, sticky=W);
-        Entry(lcdFrame,textvariable=self.entryString2,width=16).grid(row=1, column=1, sticky=W);
+        Label(lcdFrame,text="pwd").grid(row=1, column=0, sticky=W,padx=5, pady=5);
+        Entry(lcdFrame,textvariable=self.entryString2,width=16).grid(row=1, column=1, sticky=W,padx=5,pady=5);
         self.entryString2.set("Second Line");
         
-        Button(lcdFrame,text="send",command=self.userClickSend,padx=0,pady=10).grid(row=2,column=0, sticky=W);
+        Button(lcdFrame,text="send",command=self.userClickSend,padx=10,pady=10).grid(row=2,column=0, columnspan=2,sticky=NSEW,padx=5,pady=5);
         lcdFrame.pack();
         
         #buzzer init
@@ -54,14 +54,15 @@ class App:
         self.buzzer.stop();
     
     def userClickSend(self):
+        print("user send");
         pass;
         
 
 if __name__ == "__main__":
     root = Tk();
     root.title("RFID_LCD_BUZZER");
-    root.option_add("*font",("verdana", 18, "bold"));
-    root.option_add("*background", "gold");
+    root.option_add("*font",("verdana", 18));
+    root.option_add("*background", "#cccccc");
     root.option_add("*forground","#888888");
     app = App(root);
     root.mainloop();
