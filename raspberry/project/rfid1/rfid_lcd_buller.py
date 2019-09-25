@@ -1,6 +1,7 @@
 from tkinter import *
 from gpiozero import Buzzer
 from threading import Timer
+import RPi.GPIO as GPIO
 
 class App:
     def __init__(self,window):
@@ -10,18 +11,25 @@ class App:
         buzzerFrame.pack();
         
         #buzzer init
-        self.buzzer = Buzzer(16);
+        #self.buzzer = Buzzer(16);
+        GPIO.setwarnings(False);
+        GPIO.setmode(GPIO.BCM);
+        GPIO.setup(16,GPIO.OUT);
+        
+        
+        self.buzzer = GPIO.PWM(16, 50);
         
         
     def userClickBuzzer(self):
         print("user click");
+        self.buzzer.start(100);
         t = Timer(0.3,self.closeBuzzer);
         t.start();
-        self.buzzer.on();
+        #self.buzzer.on();
         
     
     def closeBuzzer(self):
-        self.buzzer.off();
+        self.buzzer.stop();
 
 if __name__ == "__main__":
     root = Tk();
