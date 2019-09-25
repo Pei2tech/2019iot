@@ -15,7 +15,8 @@ class App:
         #init firebase
         self.cred = credentials.Certificate('/home/pi/Documents/raspberryfirebase-firebase-adminsdk-q4ht6-3282b25b5b.json')
         firebase_admin.initialize_app(self.cred, {
-    'databaseURL': 'https://raspberryfirebase.firebaseio.com/'
+    'databaseURL': 'https://raspberryfirebase.firebaseio.com/',
+    'databaseAuthVariableOverride': {'uid': 'NatxhTYp4AaiI2Uge648cNQjSIE3'}
     })
 
         #buzzer frame button
