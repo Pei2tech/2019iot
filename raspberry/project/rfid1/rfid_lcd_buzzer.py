@@ -76,9 +76,15 @@ class App:
         self.lcd.display_string(entry1Words,1);
         self.lcd.display_string(entry2Words,2);
         '''
-        entryEmail = self.entryString1.get();
-        user = auth.get_user_by_email(entryEmail);
-        print(user.uid);
+        try:
+            entryEmail = self.entryString1.get();        
+            user = auth.get_user_by_email(entryEmail);
+            self.lcd.display_string(user.uid,1);
+            self.lcd.display_string('success',2);
+            print(user.uid);
+        except:
+            self.lcd.display_string('incorrect',1);
+            self.lcd.display_string('who are you?',2);
         
         
 
