@@ -1,7 +1,7 @@
 from tkinter import *
-from gpiozero import Buzzer
 from threading import Timer
 import RPi.GPIO as GPIO
+import mfrc522 as MFRC522
 
 class App:
     def __init__(self,window):
@@ -13,23 +13,25 @@ class App:
         #buzzer init
         #self.buzzer = Buzzer(16);
         GPIO.setwarnings(False);
-        GPIO.setmode(GPIO.BCM);
-        GPIO.setup(16,GPIO.OUT);
+        GPIO.setmode(GPIO.BOARD);
+        GPIO.setup(36,GPIO.OUT);
+        self.buzzer = GPIO.PWM(36, 50);
         
-        
-        self.buzzer = GPIO.PWM(16, 50);
+        #rfid init
+        self.MIFAREReader = MFRC522.MFRC522();
         
         
     def userClickBuzzer(self):
         print("user click");
         self.buzzer.start(100);
-        t = Timer(0.3,self.closeBuzzer);
+        t = Timer(0.1,self.closeBuzzer);
         t.start();
-        #self.buzzer.on();
+        
         
     
     def closeBuzzer(self):
         self.buzzer.stop();
+        
 
 if __name__ == "__main__":
     root = Tk();
