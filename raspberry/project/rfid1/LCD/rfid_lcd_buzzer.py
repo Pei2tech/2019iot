@@ -2,6 +2,7 @@ from tkinter import *
 from threading import Timer
 import RPi.GPIO as GPIO
 import mfrc522 as MFRC522
+from lcd_display import lcd as Lcd
 
 class App:
     def __init__(self,window):
@@ -41,6 +42,9 @@ class App:
         #rfid init
         self.MIFAREReader = MFRC522.MFRC522();
         
+        #lcd init
+        self.lcd = Lcd()
+        
         
     def userClickBuzzer(self):
         print("user click");
@@ -54,7 +58,11 @@ class App:
         self.buzzer.stop();
     
     def userClickSend(self):
-        print("user send");
+        entry1Words = self.entryString1.get();
+        entry2Words = self.entryString2.get();
+        self.lcd.display_string(entry1Words,1);
+        self.lcd.display_string(entry2Words,2);
+        
         pass;
         
 
