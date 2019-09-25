@@ -7,29 +7,24 @@ class App:
     def __init__(self,window):
         #buzzer frame button
         buzzerFrame = Frame(window);
-        Button(buzzerFrame,text="Buzzer Control", padx=10, pady=10,command=self.userClickBuzzer).pack(padx=30,pady=10);
-        buzzerFrame.pack();
+        Button(buzzerFrame,text="Buzzer Control", padx=10, pady=10,command=self.userClickBuzzer).pack(expand=YES, fill=BOTH,padx=30,pady=10);
+        buzzerFrame.pack(expand=YES, fill=BOTH);
         
         #lcd frame
         lcdFrame = Frame(window);
         self.entryString1 = StringVar();
         self.entryString2 = StringVar();
+        
+        #grid
         #entry1Frame
-        entry1Frame = Frame(lcdFrame);
-        Label(entry1Frame,text="name").pack(side=LEFT);
-        Entry(entry1Frame,textvariable=self.entryString1,width=50).pack(side=LEFT,padx=10);
+        
+        Label(lcdFrame,text="name").grid(row=0, column=0, sticky=W);
+        Entry(lcdFrame,textvariable=self.entryString1,width=16).grid(row=0, column=1, sticky=W);
         self.entryString1.set("First Line");
-        entry1Frame.pack();
         
-        #entry2Frame
-        
-        
-        entry2Frame = Frame(lcdFrame);
-        Label(entry2Frame,text="pwd").pack(side=LEFT);
-        Entry(entry2Frame,textvariable=self.entryString2,width=50).pack(side=LEFT,padx=10);
+        Label(lcdFrame,text="pwd").grid(row=1, column=0, sticky=W);
+        Entry(lcdFrame,textvariable=self.entryString2,width=16).grid(row=1, column=1, sticky=W);
         self.entryString2.set("Second Line");
-        entry2Frame.pack();
-        
         lcdFrame.pack();
         
         #buzzer init
