@@ -25,6 +25,8 @@ class App:
         Label(lcdFrame,text="pwd").grid(row=1, column=0, sticky=W);
         Entry(lcdFrame,textvariable=self.entryString2,width=16).grid(row=1, column=1, sticky=W);
         self.entryString2.set("Second Line");
+        
+        Button(lcdFrame,text="send",command=self.userClickSend,padx=0,pady=10).grid(row=2,column=0, sticky=W);
         lcdFrame.pack();
         
         #buzzer init
@@ -33,6 +35,8 @@ class App:
         GPIO.setmode(GPIO.BOARD);
         GPIO.setup(36,GPIO.OUT);
         self.buzzer = GPIO.PWM(36, 50);
+        
+        
         
         #rfid init
         self.MIFAREReader = MFRC522.MFRC522();
@@ -48,6 +52,9 @@ class App:
     
     def closeBuzzer(self):
         self.buzzer.stop();
+    
+    def userClickSend(self):
+        pass;
         
 
 if __name__ == "__main__":
