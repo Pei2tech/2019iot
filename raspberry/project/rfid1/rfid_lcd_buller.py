@@ -5,10 +5,32 @@ import mfrc522 as MFRC522
 
 class App:
     def __init__(self,window):
-        #buzzer button
+        #buzzer frame button
         buzzerFrame = Frame(window);
         Button(buzzerFrame,text="Buzzer Control", padx=10, pady=10,command=self.userClickBuzzer).pack(padx=30,pady=10);
         buzzerFrame.pack();
+        
+        #lcd frame
+        lcdFrame = Frame(window);
+        self.entryString1 = StringVar();
+        self.entryString2 = StringVar();
+        #entry1Frame
+        entry1Frame = Frame(lcdFrame);
+        Label(entry1Frame,text="name").pack(side=LEFT);
+        Entry(entry1Frame,textvariable=self.entryString1,width=50).pack(side=LEFT,padx=10);
+        self.entryString1.set("First Line");
+        entry1Frame.pack();
+        
+        #entry2Frame
+        
+        
+        entry2Frame = Frame(lcdFrame);
+        Label(entry2Frame,text="pwd").pack(side=LEFT);
+        Entry(entry2Frame,textvariable=self.entryString2,width=50).pack(side=LEFT,padx=10);
+        self.entryString2.set("Second Line");
+        entry2Frame.pack();
+        
+        lcdFrame.pack();
         
         #buzzer init
         #self.buzzer = Buzzer(16);
