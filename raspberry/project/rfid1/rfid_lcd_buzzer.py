@@ -31,6 +31,7 @@ class App:
         buzzerFrame.pack(expand=YES, fill=BOTH);
         
         #lcd frame
+        Label(window,text="validate").pack(padx=10,pady=20,expand=YES, fill=BOTH);
         lcdFrame = Frame(window);
         self.entryString1 = StringVar();
         self.entryString2 = StringVar();
@@ -50,13 +51,14 @@ class App:
         lcdFrame.pack();
         
         #member frame
+        Label(window,text="add Member").pack(padx=10,pady=20,expand=YES, fill=BOTH);
         memberFrame = Frame(window);
         self.entryString3= StringVar();
         self.entryString4 = StringVar();
         
         #grid
         #entry1Frame
-        
+       
         Label(memberFrame,text="name").grid(row=0, column=0, sticky=W,padx=5,pady=5);
         Entry(memberFrame,textvariable=self.entryString3,width=16).grid(row=0, column=1, sticky=W,padx=5,pady=5);
         self.entryString3.set("input Name");
