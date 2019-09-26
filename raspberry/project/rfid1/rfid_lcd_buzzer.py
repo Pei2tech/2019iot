@@ -110,8 +110,22 @@ class App:
                 uid2 = self.uid[2]
                 uid3 = self.uid[3]
                 
-                uidString= str(uid0) + str(uid1) + str(uid2) + str(uid3)
-                self.lcd.display_string(uidString,1);
+                if uid0 != self.preUid0 or uid1 != self.preUid1 or uid2 != self.preUid2 or uid3 != self.preUid3:
+                    self.preUid0 = uid0;
+                    self.preUid1 = uid1;
+                    self.preUid2 = uid2;
+                    self.preUid3 = uid3;
+                    uidString= str(uid0) + str(uid1) + str(uid2) + str(uid3)
+                    #lcd
+                    self.lcd.display_string(uidString,1);
+                    
+                    #buzzer 
+                    print(uidString);
+                    self.buzzer.start(100)
+                    Timer(0.1,self.closeBuzzer).start();
+        
+                
+                
         
         Timer(0.1,self.rfidHandler).start();
 
