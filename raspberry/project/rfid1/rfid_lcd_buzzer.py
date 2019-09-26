@@ -90,6 +90,12 @@ class App:
         self.MIFAREReader = MFRC522.MFRC522();
         self.rfidHandler();
         
+        #addMember 
+        self.uid1 = [];
+        self.preUid10 = 0
+        self.preUid11 = 0
+        self.preUid12 = 0
+        self.preUid13 = 0
         
         
     def userClickBuzzer(self):
@@ -160,6 +166,34 @@ class App:
         
     def addMember(self):
         print("addMember")
+        (status,tagType) = self.MIFAREReader.MFRC522_Request(self.MIFAREReader.PICC_REQIDL);
+        
+        if status == self.MIFAREReader.MI_OK:
+            (status,self.uid1) = self.MIFAREReader.MFRC522_Anticoll();
+            if status == self.MIFAREReader.MI_OK:
+                uid0 = self.uid1[0]
+                uid1 = self.uid1[1]
+                uid2 = self.uid1[2]
+                uid3 = self.uid1[3]
+                
+                if uid0 != self.preUid10 or uid1 != self.preUid11 or uid2 != self.preUid12 or uid3 != self.preUid13:
+                    self.preUid10 = uid0;
+                    self.preUid11 = uid1;
+                    self.preUid12 = uid2;
+                    self.preUid13 = uid3;
+                    uidString= str(uid0) + str(uid1) + str(uid2) + str(uid3)
+                    print(uidString)
+                    #lcd
+                    
+                    self.lcd.display_string(uidString,1);
+                    
+                    #buzzer 
+                    print(uidString);
+                    self.buzzer.start(100)
+                    self.buzzer.ChangeFrequency(1452)
+                    time.sleep(0.1)
+                    self.buzzer.stop();
+                    #Timer(0.1,self.closeBuzzer).start();
 
 if __name__ == "__main__":
     root = Tk();
