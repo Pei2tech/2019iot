@@ -172,8 +172,10 @@ class App:
         (status,tagType) = self.MIFAREReader.MFRC522_Request(self.MIFAREReader.PICC_REQIDL);
         
         if status == self.MIFAREReader.MI_OK:
+            print("Reader_OK")
             (status,self.uid1) = self.MIFAREReader.MFRC522_Anticoll();
             if status == self.MIFAREReader.MI_OK:
+                
                 uid0 = self.uid1[0]
                 uid1 = self.uid1[1]
                 uid2 = self.uid1[2]
@@ -192,20 +194,25 @@ class App:
                         print('Document data: {}'.format(doc.to_dict()))
                         current = time.time()
                         date = datetime.datetime.fromtimestamp(current).strftime("%Y-%m-%d-%H-%M-%S");
-                        if doc == None:
+                        
+                        if doc.to_dict() == None:
                             member = {
                                 'id': uidString,
                                 'timestamp': current,
                                 'time': date,
-                                'name': self.entryString4.get()
+                                'name': self.entryString3.get()
                             }
                             
                             self.firestore.collection('members').document(uidString).set(member)
                             self.lcd.display_string("success",1);
+                        
                             
                     except google.cloud.exceptions.NotFound:
                         print('No such document!')
+            
+        
 
+           
                     #lcd
                     
                     self.lcd.display_string(uidString,1);
