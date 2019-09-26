@@ -151,6 +151,32 @@ class App:
                     self.preUid2 = uid2;
                     self.preUid3 = uid3;
                     uidString= str(uid0) + str(uid1) + str(uid2) + str(uid3)
+                    
+                    #firebase
+                    member_ref = self.firestore.collection('members').document(uidString)
+                    
+                    print('uid:{}'.format(uidString));
+                    try:
+                        doc = member_ref.get()
+                        print('Document data: {}'.format(doc.to_dict()))
+                        current = time.time()
+                        date = datetime.datetime.fromtimestamp(current).strftime("%Y-%m-%d-%H-%M-%S");
+                        info = doc.to_dict()
+                        print(info)
+                        if info != None:
+                            member = {
+                                'id': uidString,
+                                'timestamp': current,
+                                'time': date,
+                                'name': info["name"]
+                            }
+                            
+                            self.firestore.collection('Door').document().set(member)
+                            self.lcd.display_string("success",1);
+                            
+                    except:
+                        pass
+
                     #lcd
                     self.lcd.display_string(uidString,1);
                     
@@ -172,7 +198,7 @@ class App:
         (status,tagType) = self.MIFAREReader.MFRC522_Request(self.MIFAREReader.PICC_REQIDL);
         
         if status == self.MIFAREReader.MI_OK:
-            print("Reader_OK")
+            
             (status,self.uid1) = self.MIFAREReader.MFRC522_Anticoll();
             if status == self.MIFAREReader.MI_OK:
                 
