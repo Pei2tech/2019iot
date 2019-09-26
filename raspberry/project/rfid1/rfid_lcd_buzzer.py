@@ -8,6 +8,7 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
 from firebase_admin import auth
+from firebase_admin import firestore
 
 import time
 
@@ -24,6 +25,7 @@ class App:
     'databaseURL': 'https://raspberryfirebase.firebaseio.com/',
     'databaseAuthVariableOverride': {'uid': 'NatxhTYp4AaiI2Uge648cNQjSIE3'}
     })
+        self.firestore = firestore.client()
 
         #buzzer frame button
         buzzerFrame = Frame(window);
