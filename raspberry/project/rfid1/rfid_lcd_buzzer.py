@@ -98,10 +98,13 @@ class App:
             
     def rfidHandler(self):
         #scan for cards
+        
         (status,tagType) = self.MIFAREReader.MFRC522_Request(self.MIFAREReader.PICC_REQIDL);
         
         if status == self.MIFAREReader.MI_OK:
             print("ok");
+        
+        Timer(0.1,self.rfidHandler).start();
 
 if __name__ == "__main__":
     root = Tk();
