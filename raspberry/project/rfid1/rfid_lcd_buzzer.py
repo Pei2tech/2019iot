@@ -10,6 +10,10 @@ from firebase_admin import db
 from firebase_admin import auth
 
 
+
+
+
+
 class App:
     def __init__(self,window):
         #init firebase
@@ -53,8 +57,13 @@ class App:
         
         
         #rfid init
+        self.uid = [];
+        self.preUid0 = 0
+        self.preUid1 = 0
+        self.preUid2 = 0
+        self.preUid3 = 0
         self.MIFAREReader = MFRC522.MFRC522();
-        
+        self.rfidHandler();
         #lcd init
         self.lcd = Lcd()
         
@@ -86,8 +95,13 @@ class App:
         except:
             self.lcd.display_string('incorrect',1);
             self.lcd.display_string('who are you?',2);
+            
+    def rfidHandler(self):
+        #scan for cards
+        (status,tagType) = self.MIFAREReader.MFRC522_Request(self.MIFAREReader.PICC_REQIDL);
         
-        
+        if status == self.MIFAREReader.MI_OK:
+            print("ok");
 
 if __name__ == "__main__":
     root = Tk();
