@@ -55,6 +55,8 @@ class App:
         self.buzzer = GPIO.PWM(36, 50);
         
         
+        #lcd init
+        self.lcd = Lcd()
         
         #rfid init
         self.uid = [];
@@ -64,8 +66,7 @@ class App:
         self.preUid3 = 0
         self.MIFAREReader = MFRC522.MFRC522();
         self.rfidHandler();
-        #lcd init
-        self.lcd = Lcd()
+        
         
         
     def userClickBuzzer(self):
@@ -102,7 +103,15 @@ class App:
         (status,tagType) = self.MIFAREReader.MFRC522_Request(self.MIFAREReader.PICC_REQIDL);
         
         if status == self.MIFAREReader.MI_OK:
-            print("ok");
+            (status,self.uid) = self.MIFAREReader.MFRC522_Anticoll();
+            if status == self.MIFAREReader.MI_OK:
+                uid0 = self.uid[0]
+                uid1 = self.uid[1]
+                uid2 = self.uid[2]
+                uid3 = self.uid[3]
+                
+                uidString= str(uid0) + str(uid1) + str(uid2) + str(uid3)
+                self.lcd.display_string(uidString,1);
         
         Timer(0.1,self.rfidHandler).start();
 
