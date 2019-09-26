@@ -49,6 +49,25 @@ class App:
         Button(lcdFrame,text="send",command=self.userClickSend,padx=10,pady=10).grid(row=2,column=0, columnspan=2,sticky=NSEW,padx=5,pady=5);
         lcdFrame.pack();
         
+        #member frame
+        memberFrame = Frame(window);
+        self.entryString3= StringVar();
+        self.entryString4 = StringVar();
+        
+        #grid
+        #entry1Frame
+        
+        Label(memberFrame,text="name").grid(row=0, column=0, sticky=W,padx=5,pady=5);
+        Entry(memberFrame,textvariable=self.entryString3,width=16).grid(row=0, column=1, sticky=W,padx=5,pady=5);
+        self.entryString3.set("input Name");
+        
+        Label(memberFrame,text="card").grid(row=1, column=0, sticky=W,padx=5, pady=5);
+        Entry(memberFrame,textvariable=self.entryString4,width=16).grid(row=1, column=1, sticky=W,padx=5,pady=5);
+        self.entryString4.set("Second Line");
+        
+        Button(memberFrame,text="send",command=self.addMember,padx=10,pady=10).grid(row=2,column=0, columnspan=2,sticky=NSEW,padx=5,pady=5);
+        memberFrame.pack();
+        
         #buzzer init
         #self.buzzer = Buzzer(16);
         GPIO.setwarnings(False);
@@ -136,6 +155,9 @@ class App:
                 
         
         Timer(0.1,self.rfidHandler).start();
+        
+    def addMember(self):
+        print("addMember")
 
 if __name__ == "__main__":
     root = Tk();
