@@ -11,6 +11,7 @@ from firebase_admin import auth
 from firebase_admin import firestore
 
 import time
+import datetime
 
 
 
@@ -184,7 +185,27 @@ class App:
                     self.preUid12 = uid2;
                     self.preUid13 = uid3;
                     uidString= str(uid0) + str(uid1) + str(uid2) + str(uid3)
-                    print(uidString)
+                    member_ref = self.firestore.collection('members').document(uidString)
+                    print('uid:{}'.format(uidString));
+                    try:
+                        doc = member_ref.get()
+                        print('Document data: {}'.format(doc.to_dict()))
+                        current = time.time()
+                        date = datetime.datetime.fromtimestamp(current).strftime("%Y-%m-%d-%H-%M-%S");
+                        if doc == None:
+                            member = {
+                                'id': uidString,
+                                'timestamp': current,
+                                'time': date,
+                                'name': self.entryString4.get()
+                            }
+                            
+                            self.firestore.collection('members').document(uidString).set(member)
+                            self.lcd.display_string("success",1);
+                            
+                    except google.cloud.exceptions.NotFound:
+                        print('No such document!')
+
                     #lcd
                     
                     self.lcd.display_string(uidString,1);
