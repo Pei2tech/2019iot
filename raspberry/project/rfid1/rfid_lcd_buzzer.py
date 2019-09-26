@@ -9,6 +9,8 @@ from firebase_admin import credentials
 from firebase_admin import db
 from firebase_admin import auth
 
+import time
+
 
 
 
@@ -72,8 +74,11 @@ class App:
     def userClickBuzzer(self):
         print("user click");
         self.buzzer.start(100);
+        
         t = Timer(0.1,self.closeBuzzer);
         t.start();
+        
+        
         
         
     
@@ -122,7 +127,10 @@ class App:
                     #buzzer 
                     print(uidString);
                     self.buzzer.start(100)
-                    Timer(0.1,self.closeBuzzer).start();
+                    self.buzzer.ChangeFrequency(1452)
+                    time.sleep(0.1)
+                    self.buzzer.stop();
+                    #Timer(0.1,self.closeBuzzer).start();
         
                 
                 
