@@ -92,28 +92,22 @@ let myFirebase = firebase.firestore();
 
 //firebase
 $(document).ready(() => {
-    /*
-    myFirebase.collection("Door").orderBy("timestamp",  "desc").limit(20).get().then((querySnapshot) => {
-        $accessDisplay = $("#accessDisplay");
-        querySnapshot.forEach((doc) => {
-            console.log("姓名:" + doc.data().name + "\n" + "時間:" + doc.data().time);
-            let name = doc.data().name;
-            let time = doc.data().time;
-            $user = $("<div class='user'><h3>" + name + "</h3><p>" + time + "</p></div>");
-            $accessDisplay.append( $user);
-
-        });
-    });
-    */
      myFirebase.collection("Door").onSnapshot((querySnapshot) => {
         $accessDisplay = $("#accessDisplay");
-        querySnapshot.forEach((doc) => {
+        $accessDisplay.empty();
+        querySnapshot.query.orderBy("timestamp",  "desc").limit(20).get().then((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
             console.log("姓名:" + doc.data().name + "\n" + "時間:" + doc.data().time);
             let name = doc.data().name;
             let time = doc.data().time;
+
             $user = $("<div class='user'><h3>" + name + "</h3><p>" + time + "</p></div>");
             $accessDisplay.append( $user);
+            });
         });
+
+
+
     });
 
 });
