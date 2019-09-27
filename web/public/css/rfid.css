@@ -162,6 +162,25 @@ main{
         }
 
 
+        #control #accessDisplay .user{
+            padding: 1em;
+            border: solid 1px #ffffff;
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        #control #accessDisplay .user:nth-of-type(odd){
+            background-color: #aaaaaa;
+            color: #333333;
+        }
+
+        #control .user h3{
+            font-size: 1em;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+
     /*====================Control End====================================*/
 
     /*=========================youtube start================================*/
