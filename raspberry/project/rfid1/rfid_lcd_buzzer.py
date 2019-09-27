@@ -182,8 +182,8 @@ class App:
                     
                     #buzzer 
                     print(uidString);
-                    self.buzzer.start(100)
-                    self.buzzer.ChangeFrequency(1452)
+                    self.buzzer.start(50)
+                    self.buzzer.ChangeFrequency(3500)
                     time.sleep(0.1)
                     self.buzzer.stop();
                     #Timer(0.1,self.closeBuzzer).start();
