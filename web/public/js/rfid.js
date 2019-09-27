@@ -86,22 +86,15 @@ firebase.auth().signInWithEmailAndPassword("robert1@gmail.com", "123456")
 
 
 //progress interface
-//提取realtime database
-let database = firebase.database();
+//提取firestore
 
+let myFirebase = firebase.firestore();
 
 //firebase
-$(document).ready(function(){
-    let registerRef = database.ref("iot0624/MCP3008/register");
-    registerRef.on('value',function(snapshot) {
-        let registerValue = snapshot.val();
-        $("#myBar")
-        .finish()
-        .animate(
-            {
-            "width":registerValue.toString() + "%"
-            }
-            ,200,"linear")
-        .text(registerValue.toString() + "%");
+$(document).ready(() => {
+    myFirebase.collection("Door").get().then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+            console.log("姓名:" + doc.data().name + "\n" + "時間:" + doc.data().time);
+        });
     });
 });
