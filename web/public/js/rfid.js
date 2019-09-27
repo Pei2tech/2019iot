@@ -92,6 +92,7 @@ let myFirebase = firebase.firestore();
 
 //firebase
 $(document).ready(() => {
+    /*
     myFirebase.collection("Door").orderBy("timestamp",  "desc").limit(20).get().then((querySnapshot) => {
         $accessDisplay = $("#accessDisplay");
         querySnapshot.forEach((doc) => {
@@ -103,4 +104,9 @@ $(document).ready(() => {
 
         });
     });
+    */
+     myFirebase.collection("Door").onSnapshot((doc) => {
+        console.log("Current data: ", doc.data());
+    });
+
 });

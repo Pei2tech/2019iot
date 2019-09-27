@@ -19,16 +19,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../web/public/js/rfid.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="101" column="42" lean-forward="true" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="42" />
+            <state relative-caret-position="406">
+              <caret line="108" column="48" selection-start-line="108" selection-start-column="48" selection-end-line="108" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../web/public/css/rfid.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="616">
@@ -62,8 +62,8 @@
         <option value="$PROJECT_DIR$/rfid1/rfid_lcd_buzzer.py" />
         <option value="$PROJECT_DIR$/../../web/public/index.html" />
         <option value="$PROJECT_DIR$/../../web/public/raspberry/RFID.html" />
-        <option value="$PROJECT_DIR$/../../web/public/js/rfid.js" />
         <option value="$PROJECT_DIR$/../../web/public/css/rfid.css" />
+        <option value="$PROJECT_DIR$/../../web/public/js/rfid.js" />
       </list>
     </option>
   </component>
@@ -157,12 +157,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569548427379</updated>
-      <workItem from="1569548429535" duration="9414000" />
+      <workItem from="1569548429535" duration="10694000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9414000" />
+    <option name="totallyTimeSpent" value="10694000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -268,17 +268,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../web/public/js/rfid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="101" column="42" lean-forward="true" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../web/public/css/rfid.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="179" column="30" selection-start-line="179" selection-start-column="30" selection-end-line="179" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../web/public/js/rfid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="108" column="48" selection-start-line="108" selection-start-column="48" selection-end-line="108" selection-end-column="48" />
         </state>
       </provider>
     </entry>
